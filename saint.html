@@ -4,82 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saint-Louis</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Saint-louis</title>
 </head>
 <body>
-    <h1>Historique</h1>
-    <p>
-        Saint-Louis fut la première ville fondée par les Européens en Afrique occidentale en 16593. Établie par des marins de Dieppe 
-        (Normandie) sur l'Île homonyme du fleuve Sénégal, longue de 2 km et large de 300 m, elle fut baptisée ainsi en l'honneur du 
-        roi de France régnant Louis XIV, au travers de son ancêtre et homonyme Saint Louis. Un fort est alors réhabilité sur une ile 
-        inhabitée connu des habitants sous le nom Ndar en 16594. En effet cette île est supposée hantée5. Aussi le Diagne de Sor, le 
-        chef local contre un paiement annuel relativement modeste5. Les Français étaient présents en plusieurs petits comptoirs dans 
-        la région de la future ville de Saint-Louis depuis les années 1610-1620, ou ils deviennent les Européens dominants6. Auparavant, 
-        la région était disputée entre les Portugais, les Hollandais, et les Français7.
+    <!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-        Vue du Fort sur l'île Saint-Louis parue dans "L'Afrique ou histoire, moeurs, usages et coutumes des Africains", by René Claude Geoffroy de Villeneuve, 1814.
-        En 1689, le religieux français Jean-Baptiste Gaby dans un récit de voyage en Nigritie présente l'île et les rives du fleuve « Senega » comme encore en partie couverte de mangroves à palétuviers8.
+    <title>Saint-Louis</title>
+  </head>
+  <body>
+    <!---- container ----->
+    <div class="container">
+        <!---------- nav-bar------------------>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <img src="./images/louis.png"  width="50" height="50" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Historique</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Culture</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Economie</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Transport</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Education Supérieur</a>
+                  </li>
+                  
+                  
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="Recherche" placeholder="Recherche" aria-label="Recherche">
+                  <button class="btn btn-outline-success" type="submit">Recherche</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <!--------------fin container--------------->
+    
 
-        La ville fut un très important centre du commerce de l'or, de la gomme arabique, de l'ivoire et de l'esclavage en Afrique.
+    <!----------------------debut carousel---------------------->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/eco.png" class="d-block w-100" alt="slide 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/eco16.png" class="d-block w-100" alt="slide 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/eco19.png" class="d-block w-100" alt="slide 3">
+          </div>
+        </div>
+        <div class="carousel-item">
+            <img src="./images/eco15.png" class="d-block w-100" alt="slide 4">
+          </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-        Dès la Révolution française, ses habitants eurent un statut de citoyenneté devenant citoyens français.
+    <!-- Optional JavaScript; choose one of the two! -->
 
-        De 1793 à 1816, la ville de Saint-Louis, ainsi que toute la cote maritime du Sénégal sont occupés par les Britanniques, à la suite 
-        de l'exécution de Louis XVI. Au traité de Vienne, en 1815, le Sénégal est rendu aux Français, sauf la Gambie, qui devient une colonie 
-        britannique en 1815.
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
-        Centre-ville de Saint-Louis en 1910
-        Le 2 juillet 1816, La Méduse, frégate de trois mâts transportant à Saint-Louis le nouveau gouverneur du Sénégal Julien Schmaltz, 
-        avec 400 personnes à bord, fait naufrage sur les côtes de Mauritanie, s'échouant dans les sables du banc d'Arguin, au nord de 
-        Saint-Louis. Cet épisode fut immortalisé par le peintre Théodore Géricault dans le radeau de la Méduse (Musée du Louvre).
-    </p>
-    <h1>Culture</h1>
-    <p>
-        Saint-Louis, qu'on surnommait la « Venise africaine » est classée au répertoire du patrimoine mondial par l'Unesco depuis l'an 2000. 
-        Elle s'est lancée dans un ambitieux programme de rénovation de ses anciens bâtiments et a commencé à transformer les entrepôts en 
-        restaurants et en hôtels.
-
-        La ville conserve de très nombreuses maisons, typiques de l'époque coloniale, avec leur façade de chaux, leur double toiture en tuile, 
-        leur balcon en bois et leur balustrade en fer forgé.
-
-        La musique jazz, amenée par les soldats américains, au moment de la Seconde Guerre mondiale, a fait éclore toute une génération de 
-        jazzmen africains. Le Festival international de Jazz de Saint-Louis a été créé en 1992 et a connu début mai 2004, sa douzième édition.
-
-        Lors du défilé du Fanal, les habitants défilent au son des tam-tam, en portant des lampions qu'ils ont confectionnés et qui 
-        ressemblent à ceux que les esclaves du xviie siècle portaient pour éclairer les Signares jusqu'à la messe de minuit.
-
-        Depuis 2003 se déroule le Festival Rapandar, d'abord consacré au mouvement hip-hop sénégalais et aujourd'hui ouvert aux musiciens 
-        et groupes de rap africains ou internationaux, avec le message « citoyens africains, citoyens du monde : un échange culturel 
-        dynamique ».
-
-        Le Musée du Centre de Recherches et de Documentation du Sénégal à Saint-Louis est fondée en 1956.
-
-        En 2017, le MuPho10, premier musée consacré à la photographie au Sénégal est cré    
-    </p>
-    <h1>Economie</h1>
-    <p>
-        Saint-Louis a perdu toute son importance au moment de l'indépendance au profit de la nouvelle capitale Dakar qui de plus a attiré à 
-        elle tous ses intellectuels et tous ses fonctionnaires. La ville est alors tombée en léthargie12.
-
-        La communauté des pêcheurs de Saint-Louis est l'une des plus importantes de l'Afrique de l'Ouest et comprend plus de 4 000 équipages. 
-        Guet Ndar est le quartier des pêcheurs, où vivent plus de 25 000 personnes, sur une étroite langue de sable. C'est aujourd'hui la plus 
-        importante activité économique de la ville13.
-
-        De 1996 à 2004, le nombre de chambres d'hôtels a doublé, selon le syndicat d'initiative
-    </p>
-    <h1>Transport</h1>
-    <p>
-        La ville est reliée par le transport aérien avec l’Aéroport de Saint-Louis (Sénégal). Mais on y accède principalement par la route 
-        N1 venant de Dakar. Le réseau de bus et de taxi-brousse (7 places) y est particulièrement dense.
-    </p>
-    <h1>Education Supérieur</h1>
-    <p>
-        <strong>Université Gaston Berger</strong> a été fondée en 1990.
-
-        On y trouve également un centre de formation pour enseignants (Centre Régional de Formation des Personnels de l’Éducation CRFPE
-    </p>
-    <a href="index.html">Page d'Accueil</a>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
 </body>
 </html>
